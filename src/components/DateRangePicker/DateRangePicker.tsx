@@ -60,6 +60,8 @@ export default function DateRangePicker() {
         setPrevFocusDate();
       } else if (event.key === "ArrowRight") {
         setNextFocusDate();
+      } else if (event.key === "Escape") {
+        setIsOpen(false);
       }
     }
   };
